@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f5f0;
+    background-color: #e1a43a;
     color: #2d1515;
 }
 
@@ -22,7 +22,7 @@ body {
 
 .navbar h1 {
     font-family: Cinzel, sans-serif;
-    color: #f2dfb0;
+    color: #eebc3c;
 }
 
 .menu {
@@ -33,12 +33,12 @@ body {
 }
 
 .menu a {
-    color: white;
+    color: rgb(212, 66, 66);
     text-decoration: none;
 }
 
 .menu a:hover {
-    color: #d7b56d;
+    color: #ebb239;
 }
 
 .hero {
@@ -59,7 +59,7 @@ body {
 
 .hero-content {
     max-width: 600px;
-    color: white;
+    color: rgb(198, 59, 59);
 }
 
 .hero h2 {
@@ -74,7 +74,7 @@ body {
 
 footer{
     background-color: #1a0b0e;
-    color: #f4f4f4;
+    color: #c93b3b;
     padding: 40px 20px 20px;
     margin-top: 0;
 }
@@ -97,25 +97,9 @@ footer{
     margin-bottom: 12px;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.footer-links ul li {
-    margin-bottom: 8px;
-}
 
-.footer-links a {
-    color:#cccccc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
 
-.footer-links a:hover {
-    color: #ffffff;
-}
 
 .footer-bottom {
     text-align: center;
@@ -128,7 +112,7 @@ footer{
 
 .hero-banner {
     padding: 60px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../assets/imgs/adegaVinh.jpg');
+    background: linear-gradient(rgba(89, 18, 18, 0.922), rgba(0, 0, 0, 0.75)), url('../assets/imgs/adegaVinh.jpg');
     background-size: cover;
     background-position: center;
     min-height: 80vh;
