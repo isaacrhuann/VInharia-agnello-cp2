@@ -1,7 +1,7 @@
 # Vinheria Agnello cp2
 
 #Integrantes
-# isaac Rhuan, Leticia Batomarco, Enzo Gabriel, Luana Missaki
+# isaac Rhuann, Leticia Batomarco, Enzo Gabriel, Luana Missaki
 [ Link do gitHub do projeto pages ]()
 
 ## Descrição da Vinheria Agnello
@@ -18,6 +18,7 @@ O sistema da Vinheria Agnello, tem como objetivo auxiliar no gerenciamento da vi
 # Requisitos Não Funcionais
     . RNF01: O sistema deve possuir uma interface fácil de utilizar. 
     . RNF02: O sistema deve proteger as informações armazenadas.
-    . RNF03: O sistema deve manter as informações or
+    . RNF03: O sistema deve manter as informações organizadas e acessiveis aos usuários autorizados.
+    . RNF04: O sisteam deve apresentar informações de maneira clara e compreensível.
 
 
