@@ -1,0 +1,162 @@
+* { 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #2d1515;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+}
+
+.navbar h1 {
+    font-family: Cinzel, sans-serif;
+    color: #f2dfb0;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #d7b56d;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("../assets/imgs/adegaVinh.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 600px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #1a0b0e;
+    color: #f4f4f4;
+    padding: 40px 20px 20px;
+    margin-top: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-info h3,
+.footer-links h4,
+.footer-contact h4 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color:#cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #332226;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.hero-banner {
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../assets/imgs/adegaVinh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8f2335;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.btn:hover {
+    background-color: #701a29
+}
