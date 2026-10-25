@@ -2,7 +2,7 @@
 
 #Integrantes
 # isaac Rhuann, Leticia Batomarco, Enzo Gabriel, Luana Missaki
-[ Link do gitHub do projeto pages ]()
+[ Link do gitHub do projeto pages ]( https://isaacrhuann.github.io/VInharia-agnello-cp2/ )
 
 ## Descrição da Vinheria Agnello
 O sistema da Vinheria Agnello, tem como objetivo auxiliar no gerenciamento da vinheria, facilitando a organização das informações dos produtos, do estoque e das vendas. A proposta é tornar os processos mais organizados, melhorar o controle dos vinhos disponíveis e facilita o acesso às informações necessárias para o funcionamento do estabelecimento.
