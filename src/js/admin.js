@@ -27,7 +27,7 @@ function validarTexto(mensagem) {
 // 2. Função para validar números inteiros positivos
 function validarNumero(mensagem, minimo, maximo) {
     while (true) {
-        let input = prompt(mensagem);
+        let entrada = prompt(mensagem);
     
     if (entrada === null) {
         return null;
@@ -37,7 +37,7 @@ function validarNumero(mensagem, minimo, maximo) {
 
     if (
         entrada.trim() !== "" &&
-        Numeber.isInteger(numero) &&
+        Number.isInteger(numero) &&
         numero >= minimo &&
         numero <= maximo
     ) {
