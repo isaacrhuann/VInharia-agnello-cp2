@@ -119,8 +119,19 @@ function iniciarCadastro() {
         totalCadastrados++;
 
         let classificacao = classificarVinho(safra);
-        console.log(`Vinho: ${nome} | Safra: ${safra} (${classificacao}) | Qtd: ${quantidade}`);
-        alert(`Vinho "${nome}" cadastrado com sucesso!\nClassificação: ${classificacao}`);
+
+        let statusEstoque = verificarEstoqueBaixo(quantidade)
+            ? "BAIXO"
+            : "NORMAL";
+
+        let mensagem = `Vinho: ${nome}
+        Safra: ${safra}
+        Classificação: ${classificacao}
+        Quantidade: ${quantidade}
+        Estoque: ${statusEstoque}`;
+
+        console.log(mensagem);
+        alert(mensagem);
 
         if (totalCadastrados < 5) {
             let resposta = prompt("Deseja cadastrar outro vinho? (s/n)");
