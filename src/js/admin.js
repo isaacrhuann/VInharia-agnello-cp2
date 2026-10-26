@@ -12,22 +12,41 @@ let nomeVinhoMaisAntigo = "";
 
 // 1. Função para validar se o texto não está vazio
 function validarTexto(mensagem) {
-    let valor = prompt(mensagem);
-    while (!valor || valor.trim() === "") {
-        valor = prompt("Entrada inválida. " + mensagem);
+    while (true) {
+        let nome = prompt(mensagem);
+        if (nome === null) {
+            return null;
+        }
+        nome = nome.trim();
+        if (nome !== "") {
+            return nome;
+        }            
+        alert ("O nome do vinho nao pode ficar vazio!");
     }
-    return valor;
 }
-
 // 2. Função para validar números inteiros positivos
-function validarNumero(mensagem) {
-    let valor = parseInt(prompt(mensagem));
-    while (isNaN(valor) || valor < 0) {
-        valor = parseInt(prompt("Valor inválido. Insira um número válido: " + mensagem));
+function validarNumero(mensagem, minimo, maximo) {
+    while (true) {
+        let input = prompt(mensagem);
+    
+    if (entrada === null) {
+        return null;
     }
-    return valor;
-}
+    
+    let numero = Number(entrada);
 
+    if (
+        entrada.trim() !== "" &&
+        Numeber.isInteger(numero) &&
+        numero >= minimo &&
+        numero <= maximo
+    ) {
+        return numero;
+    }
+    
+    alert(`Por favor, insira um número inteiro valido`);
+    }
+}
 // 3. Função para verificar se o estoque é baixo (menos de 5 unidades)
 function verificarEstoqueBaixo(quantidade) {
     return quantidade < 5;
@@ -55,8 +74,23 @@ function iniciarCadastro() {
         let numeroAtual = totalCadastrados + 1;
         
         let nome = validarTexto("Digite o nome do vinho " + numeroAtual + ":");
-        let safra = validarNumero("Digite o ano da safra do vinho " + numeroAtual + ":");
-        let quantidade = validarNumero("Digite a quantidade em estoque do vinho " + numeroAtual + ":");
+        if (nome === null) break;
+
+        let anoAtual = new Date().getFullYear();
+
+        let safra = validarNumero(
+            "Digite a safra do vinho " + numeroAtual + ":",
+            1,
+            anoAtual
+        );
+        if (safra === null) break;
+
+        let quantidade = validarNumero(
+            "Digite a quantidade em estoque:",
+            0,
+            Number.MAX_SAFE_INTEGER
+        );
+        if (quantidade === null) break;
 
         // Verificação de estoque baixo
         if (verificarEstoqueBaixo(quantidade)) {
@@ -89,10 +123,17 @@ function iniciarCadastro() {
         alert(`Vinho "${nome}" cadastrado com sucesso!\nClassificação: ${classificacao}`);
 
         if (totalCadastrados < 5) {
-            let resposta = prompt("Deseja cadastrar outro vinho? (s/n)").toLowerCase();
-            if (resposta !== 's' && resposta !== 'sim') {
+            let resposta = prompt("Deseja cadastrar outro vinho? (s/n)");
+
+        if (resposta === null) {
+            continuar = false;
+        } else {
+            resposta = resposta.trim().toLowerCase();
+
+            if (resposta !== "s" && resposta !== "sim") {
                 continuar = false;
             }
+        }
         } else {
             alert("Limite máximo de 5 cadastros atingido.");
             continuar = false;
