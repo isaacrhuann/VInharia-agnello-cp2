@@ -1,13 +1,35 @@
+:root{
+    --primary: #fcf9f9;
+    --back-color: #3b0202e1;
+    --nav-color: #d3ab0b;}
+
 * { 
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
+.centralizar {
+    text-align: center;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #e1a43a;
-    color: #2d1515;
+    background-color: var(--primary);
+    color: var(--primary);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 20px;
+    color: var(--primary);}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 
@@ -22,7 +44,7 @@ body {
 
 .navbar h1 {
     font-family: Cinzel, sans-serif;
-    color: #eebc3c;
+    color: var(--nav-color);
 }
 
 .menu {
@@ -32,35 +54,7 @@ body {
     list-style: none;
 }
 
-.menu a {
-    color: rgb(212, 66, 66);
-    text-decoration: none;
-}
 
-.menu a:hover {
-    color: #ebb239;
-}
-
-.hero {
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    background-image: 
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-        ),
-        url("../assets/imgs/adegaVinh.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-content {
-    max-width: 600px;
-    color: rgb(198, 59, 59);
-}
 
 .hero h2 {
     font-size: 50px;
@@ -74,7 +68,7 @@ body {
 
 footer{
     background-color: #1a0b0e;
-    color: #c93b3b;
+    color: var(--primary);
     padding: 40px 20px 20px;
     margin-top: 0;
 }
@@ -103,16 +97,16 @@ footer{
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #332226;
+    border-top: 1px solid #f9ecef;
     margin-top: 30px;
     padding-top: 15px;
     font-size: 0.85rem;
-    color: #aaa;
+    color: #f4f2f2;
 }
 
 .hero-banner {
     padding: 60px 20px;
-    background: linear-gradient(rgba(89, 18, 18, 0.922), rgba(0, 0, 0, 0.75)), url('../assets/imgs/adegaVinh.jpg');
+    background: linear-gradient(rgba(46, 1, 1, 0.922), rgba(0, 0, 0, 0.75)), url('../assets/imgs/adegaVinh.jpg');
     background-size: cover;
     background-position: center;
     min-height: 80vh;
