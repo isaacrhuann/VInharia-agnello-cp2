@@ -1,28 +1,20 @@
 :root{
     --primary: #fcf9f9;
     --back-color: #3b0202e1;
-    --nav-color: #d3ab0b;}
+    --nav-color: #9e8008;}
 
 * { 
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-.centralizar {
-    text-align: center;
-}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--primary);
     color: var(--primary);
 }
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--primary);
-    padding: 20px;
-    color: var(--primary);}
+
 
 .navbar {
     display: flex;
@@ -31,7 +23,24 @@ nav {
     flex-wrap: wrap;
     gap: 15px;
 }
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
 
+.hero-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color:var(--primary);
+    margin-bottom: 30px;
+}
 
 .navbar {
     display: flex;
@@ -45,6 +54,7 @@ nav {
 .navbar h1 {
     font-family: Cinzel, sans-serif;
     color: var(--nav-color);
+    text-align: center;
 }
 
 .menu {
@@ -54,7 +64,11 @@ nav {
     list-style: none;
 }
 
-
+.img {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
 .hero h2 {
     font-size: 50px;
@@ -67,8 +81,7 @@ nav {
 }
 
 footer{
-    background-color: #1a0b0e;
-    color: var(--primary);
+    background-color:var(--back-color);
     padding: 40px 20px 20px;
     margin-top: 0;
 }
@@ -87,7 +100,7 @@ footer{
 .footer-links h4,
 .footer-contact h4 {
     font-family: 'Cinzel', serif;
-    color: #d4af37;
+    color:var(--nav-color);
     margin-bottom: 12px;
 }
 
@@ -97,11 +110,11 @@ footer{
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #f9ecef;
+    border-top: 1px solid var(--primary);
     margin-top: 30px;
     padding-top: 15px;
     font-size: 0.85rem;
-    color: #f4f2f2;
+    color: var(--primary);
 }
 
 .hero-banner {
@@ -124,17 +137,19 @@ footer{
     flex-wrap: wrap;
     width: 100%;
 }
-
-.btn {
+.btn{
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #8f2335;
-    color: white;
+    padding: 12px 24px;
+    background-color: var(--back-color);
+    color: var(--primary);
     text-decoration: none;
-    border-radius: 5px;
-
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #701a29
+    background-color: var(--nav-color);
+    transform: translateY(-5px);
 }
